@@ -1,0 +1,15 @@
+installation d'express: npm install --save express
+
+installation de nodemon: npm install --save-dev nodemon
+
+installation de morgan :npm install --save-dev morgan ( middelwares pour les routes de nos requettes)
+
+installation de body-parse : npm install body-parser --save (pour convertir les donnees en json)
+
+installation du driver mariadb afin de permettre a l'ORM d'interagir avec la base de donnees :npm install --save-dev morgan (pour les middelzare)
+
+installation de l'ORM sequelize : npm install sequelize --save
+
+installation de serve-favicon :npm install serve-favicon --save ( middelwares utiliser pour pouvoir inserer un favicon)
+npm install bcrypt --save pour crypter les mots de passe
+npm install jsonwebtoken --save pour generer les tokens d'authentification
