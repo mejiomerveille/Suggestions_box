@@ -24,7 +24,7 @@ module.exports = (app) => {
       // Enregistrer le vote
       await Vote.create({ suggestion_id, user_id });
 
-      // Mettre à jour le nombre de likes de la suggestion
+      // Mettre à jour le nombre de votes de la suggestion
       await Suggestion.increment('nombre_de_votes', { where: { id: suggestion_id } });
 
       res.json({ message: 'Vote enregistré' });

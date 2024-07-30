@@ -23,7 +23,7 @@ app
 
 sequelize.initDB()
 
-// ici , nous placerons nos futurs points de terminaison.
+// points de terminaison.
 require('./src/routes/suggestion/findAllSuggestions')(app)
 require('./src/routes/suggestion/findSuggestionByPk')(app)
 require('./src/routes/suggestion/createSuggestion')(app)
@@ -40,7 +40,7 @@ require('./src/routes/user/updateUser')(app)
 require('./src/routes/vote/createVote')(app)
 require('./src/routes/vote/findAllVote')(app)
 
-// on ajoute la gestion des erreurs
+// gestion des erreurs
 app.use(({res}) =>{
     const message = 'impossible de trouver la ressource demandee ! Vous pouvez essayer une autre URL'
     res.status(404).json({message}) 
